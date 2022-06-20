@@ -18,6 +18,6 @@ from lists import views as list_views
 from lists import urls as list_urls
 
 urlpatterns = [
-    path(r'^$', list_views.home_page, name='home'),
+    path('', list_views.home_page, name='home'),
     re_path(r'^lists/', include(list_urls)),
 ]
